@@ -1,0 +1,33 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="FE8A8C3D-328A-476D-99F9-2A24B75F8C7F" Version="1.2" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>Node.js Tools</DisplayName>
+    <Description xml:space="preserve">Provides support for editing and debugging Node.js programs.</Description>
+    <MoreInfo>http://go.microsoft.com/fwlink/?LinkId=785971</MoreInfo>
+    <GettingStartedGuide>http://go.microsoft.com/fwlink/?LinkId=785972</GettingStartedGuide>
+    <Icon>NodeJS.ico</Icon>
+    <PreviewImage>NodeJS_200x.png</PreviewImage>
+  </Metadata>
+  <!-- Version="11.0" specifies the minimum (not the maximum) version, and the
+       Id specifications are minimums; any SKU equal or 'higher' will accept
+       them. -->
+  <Installation InstalledByMsi="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
+    <InstallationTarget Id="Microsoft.VisualStudio.VWDExpress" Version="11.0" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="4.5" />
+    <Dependency Id="TestWindow.Microsoft.0771d463-d74d-4e95-aac2-39d3c7ec1f97" IsRequired="false" DisplayName="Test Explorer" Version="11.0" />
+    <Dependency Id="29102E6C-34F2-4FF1-BA2F-C02ADE3846E8" IsRequired="true" DisplayName="Node.js Tools - Interactive Window" Version="1.2" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Package" Path="Microsoft.NodejsTools.dll" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.NodejsTools.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.NodejsTools.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Microsoft.NodejsTools.TestAdapter.dll" AssemblyName="Microsoft.NodejsTools.TestAdapter, Version=1.0.2015.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Asset Type="UnitTestExtension" Path="Microsoft.NodejsTools.TestAdapter.dll" AssemblyName="Microsoft.NodejsTools.TestAdapter, Version=1.0.2015.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" Path="Microsoft.NodejsTools.ProjectWizard.dll" AssemblyName="Microsoft.NodejsTools.ProjectWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="ProjectTemplates" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="ItemTemplates" />
+  </Assets>
+</PackageManifest>

@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/BikeSharing.Services.Rides.API/v14/.suo
+/src/BikeSharing.Services.Rides/node_modules
+/src/BikeSharing.Services.Rides/obj/Debug
