@@ -38,7 +38,7 @@ var PORT = 8000;
 // App
 var app = express();
 app.get('/', function (req, res) {
-    res.send('<!DOCTYPE html><html><body style="background-color:gray"><h2>Hello, world!</h2></body></html>');
+    res.send('<!DOCTYPE html><html><body style="background-color:gray"><h2>Hello, OSS world!</h2></body></html>');
 });
 
 app.listen(PORT);
