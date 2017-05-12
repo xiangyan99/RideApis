@@ -33,7 +33,7 @@
 var express = require('express');
 
 // Constants
-var PORT = 80;
+var PORT = 8000;
 
 // App
 var app = express();

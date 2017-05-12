@@ -4,5 +4,4 @@ FROM node:7.10.0
 COPY . /
 RUN cd /; npm install
 
-
 CMD ["node", "/server.js"]
