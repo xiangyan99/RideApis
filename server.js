@@ -38,7 +38,7 @@ var PORT = 8000;
 // App
 var app = express();
 app.get('/', function (req, res) {
-    res.send('<!DOCTYPE html><html><body style="background-color:yellow"><h2>Hello, Microsoft world!</h2></body></html>');
+    res.send('<!DOCTYPE html><html><body style="background-color:green"><h2>Hello again, Microsoft world!</h2></body></html>');
 });
 
 app.listen(PORT);
